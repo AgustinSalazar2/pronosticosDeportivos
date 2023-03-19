@@ -12,10 +12,15 @@ public class Pronostico {
     }
 
     public int puntos() {
-        //Definir que hace el método 😅
-        int puntos = 0;
-        return puntos;
+        if (partido.resultado(equipo) == resultado) {
+            return 1;
+        } else if (resultado == ResultadoEnum.EMPATE && partido.resultado(equipo) == ResultadoEnum.EMPATE) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
+
     public Partido getPartido() {
         return partido;
     }

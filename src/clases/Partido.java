@@ -12,9 +12,18 @@ public class Partido {
         this.golesEquipo1 = golesEquipo1;
         this.golesEquipo2 = golesEquipo2;
     }
-//    public ResultadoEnum resultado(Equipo equipo) {
-//     //Definir que hace el método 😎
-//    }
+
+    public ResultadoEnum resultado(Equipo equipo) {
+        if (equipo.equals(equipo1) && golesEquipo1 > golesEquipo2) {
+            return ResultadoEnum.GANADOR;
+        } else if (equipo.equals(equipo2) && golesEquipo2 > golesEquipo1) {
+            return ResultadoEnum.GANADOR;
+        } else if (golesEquipo1 == golesEquipo2) {
+            return ResultadoEnum.EMPATE;
+        } else {
+            return ResultadoEnum.PERDEDOR;
+        }
+    }
     public Equipo getEquipo1() {
         return equipo1;
     }

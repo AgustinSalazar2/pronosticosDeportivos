@@ -14,8 +14,8 @@ public class Pronostico {
     public int puntos() {
         if (partido.resultado(equipo) == resultado) {
             return 1;
-        } else if (resultado == ResultadoEnum.EMPATE && partido.resultado(equipo) == ResultadoEnum.EMPATE) {
-            return 1;
+//        } else if ((resultado == ResultadoEnum.EMPATE) && (partido.resultado(equipo) == ResultadoEnum.EMPATE)) {
+//            return 1;
         } else {
             return 0;
         }

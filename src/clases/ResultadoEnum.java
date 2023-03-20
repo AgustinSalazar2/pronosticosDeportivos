@@ -1,34 +1,18 @@
 package clases;
 
-public class ResultadoEnum {
-    public String ganador = "GANADOR";
-    public String perdedor = "PERDEDOR";
-    public String empate = "EMPATE";
-
-    public ResultadoEnum() {
+public enum ResultadoEnum {
+    GANADOR("ganador"),
+    PERDEDOR("perdedor"),
+    EMPATE("empate");
+    private final String resultado;
+    ResultadoEnum(String resultado) {
+        this.resultado = resultado;
     }
-
-    public String getGanador() {
-        return ganador;
-    }
-
-    public void setGanador(String ganador) {
-        this.ganador = ganador;
-    }
-
-    public String getPerdedor() {
-        return perdedor;
-    }
-
-    public void setPerdedor(String perdedor) {
-        this.perdedor = perdedor;
-    }
-
-    public String getEmpate() {
-        return empate;
-    }
-
-    public void setEmpate(String empate) {
-        this.empate = empate;
+    public String[] result() {
+        String[] resultados = new String[3];
+        resultados[0] = GANADOR.resultado;
+        resultados[1] = PERDEDOR.resultado;
+        resultados[2] = EMPATE.resultado;
+        return resultados;
     }
 }

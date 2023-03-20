@@ -12,9 +12,23 @@ public class Partido {
         this.golesEquipo1 = golesEquipo1;
         this.golesEquipo2 = golesEquipo2;
     }
+
+
 //    public ResultadoEnum resultado(Equipo equipo) {
 //     //Definir que hace el método 😎
 //    }
+
+
+
+
+
+
+
+
+
+
+
+   //getters y setters
     public Equipo getEquipo1() {
         return equipo1;
     }

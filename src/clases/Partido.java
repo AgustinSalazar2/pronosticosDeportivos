@@ -14,13 +14,20 @@ public class Partido {
     }
 
     public ResultadoEnum resultado(Equipo equipo) {
+        //Si el equipo pasado por parámetro coincide con equipo1 y dicho equipo tiene más goles retorna GANADOR.
         if (equipo.equals(equipo1) && golesEquipo1 > golesEquipo2) {
             return ResultadoEnum.GANADOR;
-        } else if (equipo.equals(equipo2) && golesEquipo2 > golesEquipo1) {
+        }
+        //Sino si el equipo pasado por parámetro coincide con equipo2 y dicho equipo tiene más goles retorna GANADOR.
+        else if (equipo.equals(equipo2) && golesEquipo2 > golesEquipo1) {
             return ResultadoEnum.GANADOR;
-        } else if (golesEquipo1 == golesEquipo2) {
+        }
+        //Sino si los goles del equipo1 son iguales a los goles del equipo2 retorna EMPATE
+        else if (golesEquipo1 == golesEquipo2) {
             return ResultadoEnum.EMPATE;
-        } else {
+        }
+        //En cualquier otro caso retorna PERDEDOR
+        else {
             return ResultadoEnum.PERDEDOR;
         }
     }

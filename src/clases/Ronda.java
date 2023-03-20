@@ -15,9 +15,10 @@ public class Ronda {
     }
 
     public int puntos() {
-        //Definir que hace el método 😅
+        //Se define un acumulador
         int puntos = 0;
-
+        //Iteramos el arreglo de pronosticos y ejecutamos su método puntos para obtener el puntaje de aciertos
+        //Eso se suma al la variable puntos, el cual se retorna como valor para ser utilizado posteriormente.
         for (Pronostico pronostico : pronosticos) {
             puntos = puntos + pronostico.puntos();
         }

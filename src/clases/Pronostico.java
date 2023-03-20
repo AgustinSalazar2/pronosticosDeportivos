@@ -12,6 +12,9 @@ public class Pronostico {
     }
 
     public int puntos() {
+        //Se utiliza el método resultado, del objeto partido, para conocer el resultado del partido
+        //y se compara con el valor de la propiedad resultado que se recibe como parámetro al instanciar el objeto
+        // si coinciden retorna 1 punto, de lo contrario retorna 0
         if (partido.resultado(equipo) == resultado) {
             return 1;
 //        } else if ((resultado == ResultadoEnum.EMPATE) && (partido.resultado(equipo) == ResultadoEnum.EMPATE)) {

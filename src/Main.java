@@ -11,8 +11,8 @@ public class Main {
         BufferedReader lector;
         String linea;
 
-        String rutaPartido = "D:\\Users\\Agustin\\Escritorio\\ProyectoJava\\src\\resultados.csv";
-        String rutaPronostico = "D:\\Users\\Agustin\\Escritorio\\ProyectoJava\\src\\pronosticos.csv";
+        String rutaPartido = "C:\\Users\\laura\\compu\\ArgentinaPrograma\\JAVA\\ProyectoIntegrador\\pronosticosDeportivos\\src\\resultados.csv";
+        String rutaPronostico = "C:\\Users\\laura\\compu\\ArgentinaPrograma\\JAVA\\ProyectoIntegrador\\pronosticosDeportivos\\src\\pronosticos.csv";
 
         //Se crea un nuevo arreglo de partidos y pronosticos
         List<Partido> partidos = new ArrayList<Partido>();

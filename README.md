@@ -3,7 +3,7 @@
 ## Integrantes:
 
 - Ana Elena Mazal 👩‍💻
-- Agustin Renesalazar 👨🏻‍💻
+- Agustin Rene Salazar 👨🏻‍💻
 - Laura Veronica Velazquez 👩🏽‍💻
 
 

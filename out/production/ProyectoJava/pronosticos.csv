@@ -1,2 +1,8 @@
-Argentina;x;;;Arabia Saudita
-Polonia;;x;;Mexico
+Argentina;x;;;Arabia Saudita;Mariana;1
+Polonia;;x;;Mexico;Mariana;1
+Argentina;x;;;Mexico;Mariana;2
+Arabia Saudita;;;x;Polonia;Mariana;2
+Argentina;x;;;Arabia Saudita;Pedro;1
+Polonia;;;x;Mexico;Pedro;1
+Argentina;x;;;Mexico;Pedro;2
+Arabia Saudita;;x;;Polonia;Pedro;2
